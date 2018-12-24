@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>로그인 페이지</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css" />
+</head>
+
+<body>
+    <p style="text-align: center;"> <img src="/static/images/sound.png"></p>
+    
+    <form class="register" id="loginForm" action="." method="post" class="sm_wrap">
+        {% csrf_token %}
+   
+
+        <h1 class="registerTitle">Login</h1>
+   
+   <input type="text" class="login" placeholder="아이디 또는 이메일 입력해주세요" autofocus required>
+   <input type="password" class="login" placeholder="비밀번호">
+   <span class="login_check_box">
+        <input type="checkbox" id="login_chk" name="nvlong" class=""  value="off"  onchange="savedLong(this);nclks_chk('login_chk', 'log.keepon', 'log.keepoff',this,event)" />
+        <label for="login_chk" id="label_login_chk" class="sp">로그인 상태 유지</label>
+    </span>
+   
+</fieldset>
+   
+   <input type="submit" value="LOGIN" class="registerBottom"> 
+   <div class="registerBottom"><a href="{% url 'register' %}">회원가입</a>
+   </div>
+   
+   
+
+        <!-- <form action="." method="post" class="sm_wrap">
+                <ul>
+                    <li>{{ form.username.label_tag }}</li>
+                    <li>{{ form.username }}</li>
+                </ul>
+
+                    <li>{{ form.password.label_tag }}</li>
+                    <li>{{ form.password }}</li>
+                </ul
+
+
+        </form>
+    </div> -->
+</body>
+
