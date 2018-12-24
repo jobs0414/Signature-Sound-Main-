@@ -9,10 +9,15 @@
   }
   .text-muted {
     color: #777777;
+   
   }
   .text-primary {
     color: #fed136;
   }
+  p.text-muted {
+    font-size:27px;
+  }
+
   p {
     font-size: 14px;
     line-height: 1.75;
@@ -46,6 +51,10 @@
     text-transform: uppercase;
     font-weight: 700;
   }
+
+
+
+
   .img-centered {
     margin: 0 auto;
   }
@@ -226,7 +235,7 @@
     }
   }
   header {
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('../images/main2.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -282,8 +291,8 @@
   }
   section h2.section-heading {
     font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin-top: 10;
+    margin-bottom: 35px;
   }
   section h3.section-subheading {
     font-size: 16px;
