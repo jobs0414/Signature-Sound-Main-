@@ -21,6 +21,10 @@ class Music(models.Model):
     total_profit = models.IntegerField('총 음원수익')
     entainment = models.CharField('기획사',max_length=30)
 
+    def __str__(self): 
+        return self.title
+
+
 class Artist(models.Model):
     email = models.EmailField(max_length=254)
     user_password = models.CharField('패스워드',max_length=40)
@@ -29,6 +33,9 @@ class Artist(models.Model):
     profile_url = models.CharField('이미지 경로',max_length=50)
     own_coin = models.IntegerField('소유하고 있는 코인')
     country_code = models.IntegerField('국적코드')
+
+    def __str__(self): 
+        return self.email
 
 class Company(models.Model):
     email = models.ForeignKey('Artist',on_delete=models.CASCADE)
