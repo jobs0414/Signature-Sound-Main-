@@ -14,9 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include 
+from django.urls import path, include
 from SSoundMusic.views import HomeView 
 from SSoundMusic.views import UserCreateView, UserCreateDoneTV 
+
+from django.conf.urls.static import static #photo 앱 추가 
+from django.conf import settings #photo 앱 추가
 
 
 urlpatterns = [
@@ -25,5 +28,7 @@ urlpatterns = [
     path('accounts/register/done/', UserCreateDoneTV.as_view(), name='register_done'),
     path('', HomeView.as_view(), name='home'),
     path('admin/', admin.site.urls),
-    # path('auction/', include('auction.urls') ),
-]
+    path('photo/',include('photo.urls', namespace='photo')), #photo 앱 추가 
+
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT) #추가 
+

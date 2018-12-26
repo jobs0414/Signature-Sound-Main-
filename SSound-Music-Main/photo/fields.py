@@ -2,7 +2,7 @@ from django.db.models.fields.files import ImageField, ImageFieldFile
 from PIL import Image 
 import os 
 
-def _add_thumbs(s):
+def _add_thumb(s):
     parts = s.split(".")
     parts.insert(-1, "thumb")
     if parts[-1].lower() not in ['jpeg','jpg']:
