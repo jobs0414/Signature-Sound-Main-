@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+{% block title %} music_search_html {% endblock %} 
+
+{% block content %}
+<div id="content"> 
+
+    <h1>Music Search</h1>
+
+<form action="." method="post"> {% csrf token %}
+    {{ form.as_table }}
+    <input type="submit" value="Submit" />
+
+</form>
+
+<br/><br/>
+{ % if object_list % }
+{ % for music in object_list % }
+    <h2><a href="{{music.get_absolute_url }}">{{music.title}}</a></h2>
+        {{music.modify_date | date:"N d, Y"}}
+        
+{% endfor %}
+<!-- 
+{% for artist in object_list %}
+<h2><a href=""></a></h2> -->
+
+{% elif search_term %}
+<b><i>Search Word({{ search_term }}) Not Found ! </i></b>
+{% endif %}
+
+</div>
+{% endblock %}

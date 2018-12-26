@@ -47,6 +47,3 @@ class Code(models.Model):
     group_code = models.IntegerField()
     more_code = models.IntegerField()
     code_label = models.IntegerField() # 코드레이블 아직 파악 못함. 
-       
-
-    

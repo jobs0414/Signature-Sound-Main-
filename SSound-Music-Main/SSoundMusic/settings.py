@@ -38,8 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'streaming.apps.StreamingConfig',
-    
+    # 'tagging.apps.TaggingConfig',
+    # 'dispus',
+    'django.contrib.sites',
+    'photo.apps.PhotoConfig', 
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

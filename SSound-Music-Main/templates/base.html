@@ -1,1 +1,12 @@
 <!-- vue.js 와 부트스트랩 같이 사용하기 (jquey)는 글쎼-->
+
+<li><a href="{% url 'streaming:search' %}">Search</a></li>
+<li><a href="{% url 'admin:index' %}">Admin</a></li>
+
+{% block content %}
+{% end block %}
+
+
+{% footer content %} 
+{% endblock %}
+
