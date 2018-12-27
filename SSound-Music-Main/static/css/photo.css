@@ -10,15 +10,20 @@ div.album-list-photo {
 }
 
 /* album_detail.html */
-
 div.album-detail {
-    margin : 30px; 10px; 
+    margin : 30px 10px; 
 }
 
 div.album-detail-photo {
     float : left; 
-    width : 220px;
-    height : 220px; 
+    width : 100px;
+    height : 110px; 
+}
+
+img.thumbnail {
+    float : left; 
+    width : 300px;
+    height : 310px;
 }
 
 div.album-detail-photo > li {

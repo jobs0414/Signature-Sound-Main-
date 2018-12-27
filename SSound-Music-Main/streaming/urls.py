@@ -5,7 +5,8 @@ from django.urls import path
 app_name="streaming"
 
 urlpatterns = [ 
-    path('',)
+    path('',SearchFormView.as_view(),name="search")
+    
 
 
 ]
