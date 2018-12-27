@@ -135,5 +135,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')] #추가
 MEDIA_URL = '/media/' # 추가
 MEDIA_ROOT = os.path.join(BASE_DIR,'meida') #추가  
 
-
+#Login_url = '/accounts/login/'
+#Logout_url = '/accounts/logout/'
 LOGIN_REDIRECT_URL ='/' #추가 

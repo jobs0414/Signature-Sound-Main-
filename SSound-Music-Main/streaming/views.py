@@ -4,7 +4,7 @@ from django.views.generic.dates import DayArchiveView, TodayArchiveView
 from django.views.generic import FormView #클래스형 제네릭뷰
 # Create your views here.
 from django.views.generic.edit import FormView
-from streaming.models import MusicSearchForm
+from streaming.forms import MusicSearchForm
 from django.db.models import Q 
 from django.shortcuts import render #단축함수 render  
 

@@ -1,6 +1,6 @@
 from django.contrib import admin 
 from django.urls import path 
-# from auction.views import AuctionView, SearchFormView, AuctionDetail
+from streaming.views import SearchFormView
 
 app_name="streaming"
 

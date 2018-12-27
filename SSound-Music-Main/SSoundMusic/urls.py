@@ -29,6 +29,7 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('admin/', admin.site.urls),
     path('photo/',include('photo.urls', namespace='photo')), #photo 앱 추가 
+    path('streaming/',include('streaming.urls',namespace="streaming")), #스트리밍앱 추가 
 
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT) #추가 
 
