@@ -19,4 +19,5 @@ export default {
 };
 </script>
 
-<style src="./styles/theme.scss" lang="scss" />
+<style src="./style/theme.scss" lang="scss" /> 
+

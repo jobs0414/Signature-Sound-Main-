@@ -41,8 +41,17 @@ INSTALLED_APPS = [
     # 'tagging.apps.TaggingConfig',
     # 'dispus',
     'django.contrib.sites',
-    'photo.apps.PhotoConfig', 
+    'photo.apps.PhotoConfig',
+    'rest_framework',
 ]
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 
 MIDDLEWARE = [

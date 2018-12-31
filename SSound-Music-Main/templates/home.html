@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% comment %} {% extends "base.html" %} {% endcomment %}
 <html lang="en">
 
 <head>
@@ -54,19 +55,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">스트리밍</a>
+                        <a class="page-scroll" href="{% url 'streaming:streaming'%}">스트리밍</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">저작권경매</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">마이크로페이먼트</a>
+                        <a class="page-scroll" href="{% url 'photo:index'%}">앨범</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">코인거래소</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../templates/registration/login.html">로그인</a>
+                        <a class="page-scroll" href="{% url ''%">로그인</a>
                     </li>
                                 
 
@@ -77,6 +78,8 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    
 
     <!-- Header -->
     <header> 
