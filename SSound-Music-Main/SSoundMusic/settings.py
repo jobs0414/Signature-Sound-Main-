@@ -85,8 +85,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'SSoundMusic.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -144,6 +142,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')] #추가
 MEDIA_URL = '/media/' # 추가
 MEDIA_ROOT = os.path.join(BASE_DIR,'meida') #추가  
 
-#Login_url = '/accounts/login/'
-#Logout_url = '/accounts/logout/'
+LOGIN_URL = '/accounts/login/'
+LOGOUT_URL = '/accounts/logout/'
 LOGIN_REDIRECT_URL ='/' #추가 

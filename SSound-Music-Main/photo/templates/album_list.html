@@ -1,10 +1,11 @@
-
+{% extends 'base.html'%}
 {% block title %}  {% endblock %}
 
 {% load staticfiles %} 
 <link rel="stylesheet" href="../../static/css/photo.css">
 
-{% block content %}
+{% block contetnt %}
+
 <div id="content">
     {% for item in object_list %}
         <div class="clear_float"> 
@@ -19,17 +20,15 @@
         {% for photo in item.photo_set.all|slice:":5" %}
         <div class="album-list-photo">
             <a href="{{ photo.get_absolute_url }}">
-            <img class="thumbnail" src="{{ photo.image.thumb_ur }}" />
+            <img class="thumbnail" src="{{ photo.image.thumb_url }}" />
             </a>
             </div>
             {% endfor %}
         </div>
         {% endfor %}
         </div>
-    
-    {% endblock %}
 
-
+{% endblock %}
 
 
 
