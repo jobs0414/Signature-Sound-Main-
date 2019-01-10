@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'photo.apps.PhotoConfig', 
 ]
-
+# 깃 브랜치 테스트
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
