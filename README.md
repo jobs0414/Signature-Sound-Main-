@@ -16,6 +16,15 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+python 실행방법. 
+myvenv(가상머신에 라이브러리들 모두 있음) 
+
+source myvenv/script/activate  (가상머신 접속)
+cd ssound-music-main 
+python manage.py runserver (실행) 
+
+
+
 
 # Vue.js + Django + MaraiaDB 
 
