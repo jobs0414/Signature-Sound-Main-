@@ -1,12 +1,11 @@
 from django.contrib import admin 
 from django.urls import path 
-from streaming.views import SearchFormView,StreamingView
+from streaming.views import SearchFormView
 
 app_name="streaming"
 
 urlpatterns = [ 
-    path('', StreamingView.as_view(), name="streaming"),
-    path('search/',SearchFormView.as_view(),name="streaming:search"),
+    path('',SearchFormView.as_view(),name="search")
     
 
 

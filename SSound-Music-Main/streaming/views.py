@@ -6,14 +6,7 @@ from django.views.generic import FormView #클래스형 제네릭뷰
 from django.views.generic.edit import FormView
 from streaming.forms import MusicSearchForm
 from django.db.models import Q 
-from django.shortcuts import render #단축함수 render
-from streaming.models import * 
-
-
-
-class StreamingView(TemplateView): 
-    template_name="streaming/streaming.html"
-
+from django.shortcuts import render #단축함수 render  
 
 class SearchFormView(FormView): 
     form_class = MusicSearchForm 
@@ -29,9 +22,5 @@ class SearchFormView(FormView):
         context['search_term'] = schWord 
         context['object_list'] = music_list 
 
-        return render(self.request, self.template_name, context) 
-
-class StreamingDetail(DetailView): 
-    model = Music 
-
+        return render(self.request, self.template_name, render) 
 

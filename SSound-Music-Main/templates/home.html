@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-{% comment %} {% extends "base.html" %}  {% endcomment %}
-{% block content %}
 <html lang="en">
 
 <head>
@@ -12,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>bootstrap landingpage</title>
+    <title>SSound landingpage</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,36 +54,29 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{% url 'streaming:streaming'%}">스트리밍</a>
+                        <a class="page-scroll" href="#services">스트리밍</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">저작권경매</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{% url 'photo:index'%}">앨범</a>
+                        <a class="page-scroll" href="#portfolio">마이크로페이먼트</a>
                     </li>
                     <li>
-                        {% comment %} <a class="page-scroll" href="#portfolio">코인거래소</a> {% endcomment %}
+                        <a class="page-scroll" href="#portfolio">코인거래소</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="../templates/registration/login.html">로그인</a>
+                    </li>
+                                
 
-                    {% if user.is_active %}
-                    <li>{% firstof user.get_short_name user.get_username %} </li> 
-                    <li><a class="page-scroll" href="{% url 'password_change'%}">비밀번호 변경</a></li> 
-                    <li><a class="page-scroll" href="{% url 'logout'%}">로그아웃</a></li>
                     
-                    {% else %}
-                    <li><a class="page-scroll" href="{% url 'login'%}">로그인</a></li>
-                    <li><a class="page-scroll" href="{% url 'register'%}">회원가입</a></li> 
-
-                    {% endif %}                 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    
 
     <!-- Header -->
     <header> 
@@ -118,7 +109,7 @@
                         <i class="fa fa-music" aria-hidden="true"></i>
                     </span>
                     
-                    <h2 class="service-heading" href="{% url 'streaming:streaming'%}">음원스트리밍</h2>
+                    <h2 class="service-heading">음원스트리밍</h2>
                     <p class="text-muted">당신의 아티스트가 직접 들려주는 음원 전세계 어디서든 느껴보세요.</p>
                 </div>
                 <div class="col-md-4">
@@ -161,7 +152,7 @@
                     </div>
                 </div>
                 </div>
-{% endblock %}
+
                 
 
 <!-- 

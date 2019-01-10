@@ -13,6 +13,6 @@ class UserCreateView(CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('register_done')
 
-class UserCreateDoneTemplateView(TemplateView):
+class UserCreateDoneTV(TemplateView):
     template_name = 'registration/register_done.html'
 

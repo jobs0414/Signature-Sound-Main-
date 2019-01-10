@@ -41,18 +41,10 @@ INSTALLED_APPS = [
     # 'tagging.apps.TaggingConfig',
     # 'dispus',
     'django.contrib.sites',
-    'photo.apps.PhotoConfig',
-    'rest_framework',
+    'photo.apps.PhotoConfig', 
+
 ]
-
-REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
-}
-
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -85,6 +77,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'SSoundMusic.wsgi.application'
 
 
+# Database
+# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -142,6 +136,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')] #추가
 MEDIA_URL = '/media/' # 추가
 MEDIA_ROOT = os.path.join(BASE_DIR,'meida') #추가  
 
-LOGIN_URL = '/accounts/login/'
-LOGOUT_URL = '/accounts/logout/'
+Login_url = '/accounts/login/'
+Logout_url = '/accounts/logout/'
 LOGIN_REDIRECT_URL ='/' #추가 
