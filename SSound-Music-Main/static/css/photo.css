@@ -3,22 +3,11 @@ div.album-list {
     margin : 20px 50px; 
 }
 
-/* div.album-list-photo {
+div.album-list-photo {
     float : left; 
     width : 150px;
     height : 180px;
-} */
-
-div.album-list-photo {
-    font-family: 'Avenir', 
-    Helvetica,
-    sans-serif;
-    text-align: center;
-    color: #ece1ca;
-    margin-top: 60px;
 }
-
-
 
 /* album_detail.html */
 div.album-detail {
