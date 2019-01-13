@@ -5,8 +5,9 @@ from streaming.views import *
 app_name="streaming"
 
 urlpatterns = [ 
-    path('',MusicStreaming.as_view(),name='index'),
+    path('',MusicMain.as_view(),name="index"),
+    path('play',MusicStreaming.as_view(),name='play'),
     path('search',SearchFormView.as_view(),name="search"),
-    path('main',MusicMain.as_view(),name="main"),
+   
 
 ]

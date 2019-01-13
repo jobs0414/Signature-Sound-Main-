@@ -25,7 +25,7 @@ class SearchFormView(FormView):
         return render(self.request, self.template_name, render) 
 
 class MusicStreaming(TemplateView):
-    template_name='streaming/streaming.html'
+    template_name='streaming/streaming_play.html'
 
 class MusicMain(TemplateView): 
-    template_name='streaming/streaming_main.html'
+    template_name='streaming/streaming.html'
