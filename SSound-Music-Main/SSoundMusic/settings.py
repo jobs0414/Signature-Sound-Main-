@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'photo.apps.PhotoConfig', 
 ]
 
+SITE_ID=1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -86,7 +87,7 @@ DATABASES = {
         'ENGINE' :'django.db.backends.mysql', 
         'NAME' :'mysql',
         'USER' :'root',
-        'PASSWORD':'1234',
+        'PASSWORD':'block1428',
         'HOST' :'localhost',
         'POST' :'',
     }
@@ -133,7 +134,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')] #추가 
 
 MEDIA_URL = '/media/' # 추가
-MEDIA_ROOT = os.path.join(BASE_DIR,'meida') #추가  
+MEDIA_ROOT = os.path.join(BASE_DIR,'media') #추가  
 
 #Login_url = '/accounts/login/'
 #Logout_url = '/accounts/logout/'

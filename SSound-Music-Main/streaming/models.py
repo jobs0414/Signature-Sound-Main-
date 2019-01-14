@@ -20,6 +20,7 @@ class Music(models.Model):
     music_price = models.IntegerField('음원가격')
     total_profit = models.IntegerField('총 음원수익')
     entainment = models.CharField('기획사',max_length=30)
+    hashe = models.CharField('해쉬값',max_length=100) 
 
     def __str__(self): 
         return self.title
